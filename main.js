@@ -34,3 +34,30 @@ aboutSection.id = "about";
 // Append about section element to the document body
 document.body.appendChild(aboutSection);
 
+const images = [
+    "image1.png",
+    "image2.png",
+    "image3.png",
+    "image4.png",
+    "image5.png",
+    "image6.png",
+    "image7.png"
+];
+
+const workSection = document.getElementById("work");
+
+images.forEach((image) => {
+    const img = document.createElement("img");
+    img.setAttribute("src", image);
+    img.style.objectFit = "cover";
+    img.style.margin = "5px";
+    img.style.width = "300px";
+    img.style.height = "200px";
+    
+    const link = document.createElement("a");
+    link.setAttribute("href", "https://kaylamaeeee.github.io/" + image.split(".")[0]);
+    link.appendChild(img);
+    
+    workSection.appendChild(link);
+});
+
