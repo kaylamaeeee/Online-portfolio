@@ -61,3 +61,45 @@ images.forEach((image) => {
     workSection.appendChild(link);
 });
 
+// Selecting the elements from the HTML structure
+const socialLinks = document.querySelectorAll("#contact .social a");
+const contactInfo = document.querySelectorAll("#contact ul li");
+const endText = document.querySelector("#contact .end-text p");
+
+// Applying styles or functionality to the selected elements
+socialLinks.forEach(link => {
+    link.style.color = "blue"; // Example style change
+    link.addEventListener("click", function() {
+        // Example event listener for clicking on social links
+        console.log("You clicked on a social link!");
+    });
+});
+
+contactInfo.forEach(info => {
+    info.style.fontWeight = "bold"; // Example style change
+});
+
+endText.style.color = "green"; // Example style change
+
+document.getElementById("contact").querySelector("h5").style.textAlign = "center";
+document.getElementById("contact").querySelector("h5").style.marginTop = "50px";
+document.getElementById("contact").querySelector("h5").style.fontSize = "20px";
+
+document.getElementById("contact").getElementsByClassName("social")[0].style.textAlign = "center";
+document.getElementById("contact").getElementsByClassName("social")[0].style.marginTop = "10px";
+
+document.getElementById("contact").querySelector("h4").style.textAlign = "center";
+document.getElementById("contact").querySelector("h4").style.marginTop = "50px";
+document.getElementById("contact").querySelector("h4").style.fontSize = "20px";
+
+document.getElementById("contact").querySelector("ul").style.textAlign = "center";
+document.getElementById("contact").querySelector("ul").style.marginTop = "20px";
+
+var listItems = document.getElementById("contact").getElementsByTagName("li");
+for (var i = 0; i < listItems.length; i++) {
+    listItems[i].style.marginTop = "20px";
+}
+
+document.getElementsByClassName("end-text")[0].style.textAlign = "center";
+document.getElementsByClassName("end-text")[0].style.marginTop = "30px";
+
