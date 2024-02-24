@@ -145,6 +145,37 @@ img{
     height:200px;
 }
 
+#contact h5{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#contact .social{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#contact h4{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#contact ul{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contact li{
+    margin-top: 20px;
+}
+
+.end-text{
+    text-align: center;
+    margin-top: 30px;
+}
+
 
 @media(max-width:768px) {
     
